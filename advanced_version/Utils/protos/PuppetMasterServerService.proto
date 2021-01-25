@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+service PuppetMasterServerService {
+    rpc Crash (google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc Freeze (google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc Unfreeze (google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc Status (google.protobuf.Empty) returns (google.protobuf.Empty);
+}

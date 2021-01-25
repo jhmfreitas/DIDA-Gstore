@@ -1,0 +1,28 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+service MasterReplicaService {
+    rpc Write (WriteRequest) returns (google.protobuf.Empty);
+    rpc HeartBeat (HeartBeatRequest) returns (google.protobuf.Empty);
+    rpc Crash (google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
+message ObjectIdentifierDto {
+    string partition_id = 1;
+    string object_id = 2;
+}
+
+message ObjectDto {
+    ObjectIdentifierDto object_identifier = 1;
+    string value = 2;
+}
+
+message WriteRequest {
+    ObjectDto object = 1;
+    string server_id = 2;
+    int32 version = 3;
+}
+
+message HeartBeatRequest {
+    string server_id = 1;
+}
