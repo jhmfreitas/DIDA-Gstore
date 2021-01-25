@@ -1,0 +1,28 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+service PuppetMasterPCSService {
+    rpc Server (ServerRequest) returns (google.protobuf.Empty);
+    rpc Client (ClientRequest) returns (google.protobuf.Empty);
+}
+
+message Partition {
+    int32 replication_factor = 1;
+    string partition_name = 2;
+    repeated string server_id = 3;
+}
+
+message ServerRequest {
+    string server_id = 1;
+    string url = 2;
+    int32 min_delay = 3;
+    int32 max_delay = 4;
+    string network_configuration = 5;
+}
+
+message ClientRequest {
+    string username = 1;
+    string client_url = 2;
+    string script_file = 3;
+    string network_configuration = 4;
+}

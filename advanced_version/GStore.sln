@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{09CDAEF6-C751-4BE3-B7A8-36B285DA69CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{DB915A04-FB96-45D7-8A89-7C38AEDED1BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PuppetMaster", "PuppetMaster\PuppetMaster.csproj", "{78BD882D-DB3B-4A23-83D4-8EBE08B5DFD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{AF411EBF-286A-45E2-AD1E-69EB6F675AE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCS", "PCS\PCS.csproj", "{3D550EFD-1889-4C8E-ADFC-CC12961394C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B5A3307-E5FF-470C-BA5B-1591C479A054}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09CDAEF6-C751-4BE3-B7A8-36B285DA69CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CDAEF6-C751-4BE3-B7A8-36B285DA69CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CDAEF6-C751-4BE3-B7A8-36B285DA69CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CDAEF6-C751-4BE3-B7A8-36B285DA69CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB915A04-FB96-45D7-8A89-7C38AEDED1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB915A04-FB96-45D7-8A89-7C38AEDED1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB915A04-FB96-45D7-8A89-7C38AEDED1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB915A04-FB96-45D7-8A89-7C38AEDED1BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78BD882D-DB3B-4A23-83D4-8EBE08B5DFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78BD882D-DB3B-4A23-83D4-8EBE08B5DFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78BD882D-DB3B-4A23-83D4-8EBE08B5DFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78BD882D-DB3B-4A23-83D4-8EBE08B5DFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF411EBF-286A-45E2-AD1E-69EB6F675AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF411EBF-286A-45E2-AD1E-69EB6F675AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF411EBF-286A-45E2-AD1E-69EB6F675AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF411EBF-286A-45E2-AD1E-69EB6F675AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D550EFD-1889-4C8E-ADFC-CC12961394C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D550EFD-1889-4C8E-ADFC-CC12961394C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D550EFD-1889-4C8E-ADFC-CC12961394C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D550EFD-1889-4C8E-ADFC-CC12961394C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFE5CD65-F4D0-46A9-94C1-18298AA5B7FD}
+	EndGlobalSection
+EndGlobal

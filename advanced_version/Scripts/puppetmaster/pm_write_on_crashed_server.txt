@@ -1,0 +1,18 @@
+partition 3 part-1 s-1 s-2 s-3
+partition 3 part-2 s-2 s-3 s-4
+partition 3 part-3 s-3 s-4 s-5
+partition 3 part-4 s-4 s-5 s-1
+partition 3 part-5 s-5 s-1 s-2
+server s-1 http://localhost:8081 0 0
+server s-2 http://localhost:8082 0 0
+server s-3 http://localhost:8083 0 0
+server s-4 http://localhost:8084 0 0
+server s-5 http://localhost:8085 0 0
+# GRACE_PERIOD = 2000
+# HEARTBEAT_TIMEOUT = 5000;
+# HEARTBEAT_INTERVAL = 500;
+# We allow for servers to start and some heartbeat messages to be sent.
+wait 3000
+client client1 http://localhost:8090 cl_read_wait_write
+wait 1000
+crash s-1

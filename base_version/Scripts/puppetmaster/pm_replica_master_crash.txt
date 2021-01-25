@@ -1,0 +1,13 @@
+server s-1 http://localhost:8081 0 0
+server s-2 http://localhost:8082 0 0
+server s-3 http://localhost:8083 0 0
+server s-4 http://localhost:8084 0 0
+partition 4 part-1 s-1 s-2 s-3 s-4
+wait 10000
+crash s-2
+wait 10000
+status
+wait 1000
+crash s-1
+wait 15000
+status

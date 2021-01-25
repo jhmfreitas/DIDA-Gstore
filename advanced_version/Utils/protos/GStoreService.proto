@@ -1,0 +1,34 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+service GStoreService {
+    rpc Read (GStoreReadRequest) returns (GStoreReadReply);
+    rpc Write (GStoreWriteRequest) returns (google.protobuf.Empty);
+    rpc ListServer (google.protobuf.Empty) returns (GStoreListServerReply);
+}
+
+message DataObjectIdentifier {
+    string partition_id = 1;
+    string object_id = 2;
+}
+
+message DataObject {
+    DataObjectIdentifier object_identifier = 1;
+    string value = 2;
+}
+
+message GStoreReadRequest {
+    DataObjectIdentifier object_identifier = 1;
+}
+
+message GStoreReadReply {
+    DataObject object = 1;
+}
+
+message GStoreWriteRequest {
+    DataObject object = 1;
+}
+
+message GStoreListServerReply {
+    repeated DataObject objects = 1;
+}

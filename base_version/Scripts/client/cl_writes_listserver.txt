@@ -1,0 +1,15 @@
+write part-1 o-1 "Value1"
+write part-1 o-2 "Value2"
+write part-2 o-1 "Value3"
+write part-3 o-1 "Value1"
+listServer s-1
+listServer s-2
+listServer s-3
+listServer s-4
+listServer s-5
+wait 10000
+listServer s-1
+listServer s-2
+listServer s-3
+listServer s-4
+listServer s-5

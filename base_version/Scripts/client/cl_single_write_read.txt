@@ -1,0 +1,2 @@
+write part-1 o-1 "Value"
+read part-1 o-1 -1

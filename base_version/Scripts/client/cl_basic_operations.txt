@@ -1,0 +1,10 @@
+write part-1 o-1 "v1"
+write part-1 o-1 "v2"
+write part-1 o-1 "v3"
+write part-2 o-1 "ABC"
+write part-2 o-2 "DEF"
+write part-5 o-1 "XYZ"
+read part-1 o-1 s-2
+read part-2 o-1 -1
+read part-5 o-1 -1
+listGlobal
